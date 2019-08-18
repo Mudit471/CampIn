@@ -7,7 +7,6 @@ var express=require("express"),
 	flash= require("connect-flash"),
 	methodOverride=require("method-override"),
 	Campground=require("./models/campground"),
-	seedDB=require("./seeds"),
 	Comment= require("./models/comment"),
 	User= require("./models/user");
 
@@ -45,7 +44,6 @@ app.use(function(req, res, next){
 	
 	next(); 
 });
-
 app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
