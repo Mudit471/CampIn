@@ -1,0 +1,16 @@
+.thumbnail img{
+	width: 100%;
+}
+.thumbnail{
+	padding: 0;
+}
+.delete-form {
+	display: inline;
+}
+#i{
+	background-image:url("https://images.unsplash.com/photo-1517824806704-9040b037703b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	color: white;
+}
