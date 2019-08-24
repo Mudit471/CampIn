@@ -27,7 +27,7 @@ app.use(flash());
 //PASSPORT CONFIGURATION
 //==========================================================
 app.use(require("express-session")({
-	secret:"Once agin Rusty wins cutest dog",
+	secret:"Adding passport-local for authentication",
 	resave: false,
 	saveUninitialized: false
 }));
@@ -50,5 +50,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
-	console.log("YelpCamp Server started at", PORT);
+	console.log("Server started at", PORT);
 });
