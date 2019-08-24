@@ -17,3 +17,7 @@
 	width:30%; 
 	margin: 30px auto;
 }
+.d{
+	display: flex; 
+	flex-wrap: wrap;
+}
