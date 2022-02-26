@@ -15,7 +15,6 @@ var commentRoutes= require("./routes/comments"),
 	indexRoutes = require("./routes/index");
 
 var url=process.env.DATABASEURL || "mongodb://localhost/camp_in";
-console.log(process.env.DATABASEURL);
 mongoose.connect(url ,{ useNewUrlParser: true });
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -48,7 +47,7 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 
 app.listen(PORT, function(){
 	console.log("Server started at", PORT);
-});
+});gi
