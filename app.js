@@ -53,6 +53,6 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
 const PORT = process.env.PORT || 
-app.listen(3000, function(){
+app.listen(PORT, function(){
 	console.log("Server started at", PORT);
 });
