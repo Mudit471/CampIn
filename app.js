@@ -16,7 +16,7 @@ var commentRoutes= require("./routes/comments"),
 
 var dbUrl=process.env.DB_URL || "mongodb://localhost/camp_in";
 mongoose.connect(dbUrl, {
-    useNewUrlParser: true,
+    useNewUrlParser: false,
     useCreateIndex: true,
     useUnifiedTopology: true,
     useFindAndModify: false
